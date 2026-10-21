@@ -70,3 +70,4 @@ def add_member(e):
             {members_list}
         </div>
     """
+    #add the person that the user has inputed into the club

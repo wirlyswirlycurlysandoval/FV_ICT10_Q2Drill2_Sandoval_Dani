@@ -27,11 +27,19 @@ grade10_members = {
     "Julia Bermudez"
 }
 
+grade11_members = {
+    "Audrey Tan",
+    "Enzo Macaranas",
+    "Meyer Cruz",
+}
+
+
 all_members = (
     grade7_members
     | grade8_members
     | grade9_members
     | grade10_members
+    | grade11_members
 )
 
 def add_member(e):
@@ -50,10 +58,10 @@ def add_member(e):
     members_list = "<br>".join(sorted(all_members))
     #sort the members alphabetically
     
-    members_list = len(all_members)
+    total_members = len(all_members)
        #count total number of members
 
-    document.getElementbyId("output2").innerHTML = f"""
+    document.getElementById("output2").innerHTML = f"""
     <h4>Club Member Directory</h4>
         <hr>
         <h5>Total Members: {total_members}</h5>
